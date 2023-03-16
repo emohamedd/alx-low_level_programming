@@ -1,4 +1,5 @@
-#include <stdio>
+#include <stdio.h>
+
 /**
  * main - Entry point
  * Description: 'prints a string the standard output'
