@@ -4,7 +4,7 @@
   *Description: Task
   *Return: always 0
   */
-int main()
+int main(void)
 {
 	int	a;
 	int	b;
