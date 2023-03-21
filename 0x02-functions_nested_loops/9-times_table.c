@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * jack_bauer - prints the Time
+ * times_table - prints the Time
  *
  * Return: void
  */
@@ -14,7 +14,7 @@ void times_table(void)
 	while (i < 10)
 	{
 		j = 0;
-		while(j < 10)
+		while (j < 10)
 		{
 			m = i * j;
 			if (j != 0)
@@ -36,9 +36,4 @@ void times_table(void)
 		_putchar('\n');
 		i++;
 	}
-}
-
-int main()
-{
-	times_table();
 }
