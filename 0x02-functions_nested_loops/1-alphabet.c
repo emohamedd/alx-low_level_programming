@@ -1,9 +1,9 @@
 #include "main.h"
 #include <stdio.h>
+
 /**
-  *main - entry point
-  *Description: Task
-  *Return: always 0
+*print_alphabet - prints alphabet
+*Return: No return.
 */
 
 void print_alphabet(void)
