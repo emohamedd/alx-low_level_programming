@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <main.h>
+
 /**
   *main - entry point
   *Description: Task
@@ -8,6 +8,13 @@
 
 int main(void)
 {
-	printf("_putchar\n");
+	int i = 0;
+	char *str = "_putchar\n";
+
+	while(str[i])
+	{
+		putchar(str[i]);
+		i++;
+	}
 	return (0);
 }
