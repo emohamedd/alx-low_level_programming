@@ -1,10 +1,9 @@
-
 #include "main.h"
 #include <stdio.h>
 
 /**
- * _islower - prints the alphabet in lowercase
- *
+ * _islower- prints the alphabet in lowercase
+ * @c: the variable
  * Return: void
  */
 
