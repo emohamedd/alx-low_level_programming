@@ -10,13 +10,10 @@
  * On error, -1 is returned, and errno is set appropriately.
  */
 void print_alphabet(void);
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
-}
 int main(void)
 {
-	print_alphabet();
-	return (0);
+        print_alphabet();
+        return (0);
 }
+
 #endif
