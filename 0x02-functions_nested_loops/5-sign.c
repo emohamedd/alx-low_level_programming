@@ -9,19 +9,21 @@
 
 int print_sign(int n)
 {
+	int r;
 	if (n > 0)
 	{
 		printf("+");
-		return (1);
+		r = 1;
 	}
 	else if (n == 0)
 	{
-		printf("0\n");
-		return (0);
+		printf("0");
+		r = 0;
 	}
 	else
 	{
-		printf("-\n");
-		return (-1);
+		printf("-");
+		r = -1;
 	}
+	return (r);
 }
