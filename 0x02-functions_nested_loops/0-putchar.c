@@ -9,12 +9,7 @@
 int main(void)
 {
 	int i = 0;
-	char *str = "_putchar\n";
 
-	while (str[i])
-	{
-		putchar(str[i]);
-		i++;
-	}
+	printf("_putchar\n");
 	return (0);
 }
