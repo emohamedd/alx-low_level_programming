@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * _isupper - prints the alphabet in lowercase
+ * _isdigit - prints the alphabet in lowercase
  * @c: the variable
  * Return: 1 || 0
  */
