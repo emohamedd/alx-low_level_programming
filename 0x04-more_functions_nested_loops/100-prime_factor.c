@@ -1,28 +1,38 @@
-#include "main.h"
+k#include "main.h"
+#include <math.h>
 /**
- * print_number - a function that print a number
- * @n: variable input
- * Return: void return nothing
+ * main - a function print prime factor
+ *
+ * Return: Always 0 (Success)
  */
-
-void print_number(int n)
+int main(void)
 {
-	unsigned int num;
+	long int n;
+	long int max;
+	long int i;
 
-	if (n < 0)
-	{
-		num = -n;
-		_putchar('-');
-	}
-	else
-	{
-		num = n;
-	}
+	n = 612852475143;
+	max = -1;
 
-	if (num / 10)
+	while (n % 2 == 0)
 	{
-		print_number(num / 10);
+		max = 2;
+		n /= 2;
 	}
 
-	_putchar((num % 10) + '0');
+	for (i = 3; i <= sqrt(n); i = i + 2)
+	{
+		while (n % i == 0)
+		{
+			max = i;
+			n = n / i;
+		}
+	}
+
+	if (n > 2)
+		max = n;
+
+	printf("%ld\n", max);
+
+	return (0);
 }
