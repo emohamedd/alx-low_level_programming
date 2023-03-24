@@ -1,4 +1,4 @@
-k#include "main.h"
+#include "main.h"
 #include <math.h>
 /**
  * main - a function print prime factor
