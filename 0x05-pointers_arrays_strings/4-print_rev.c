@@ -1,7 +1,7 @@
 #include "main.h"
 #include <unistd.h>
 /**
- *_print_rev -  a string
+ *print_rev -  a string
  *@s: variable
  *Return: void
  */
