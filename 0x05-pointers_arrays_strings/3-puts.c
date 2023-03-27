@@ -16,8 +16,3 @@ void _puts(char *str)
 	}
 	_putchar('\n');
 }
-int main()
-{
-	char *str = "Hello My name";
-	_puts(str);
-}
