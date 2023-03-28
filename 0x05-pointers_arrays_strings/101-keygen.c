@@ -29,7 +29,6 @@ int main(void)
         password[99] = 2772 - sum;
     }
 
-    printf("Generated Password: %s\n", password);
 
     return 0;
 }
