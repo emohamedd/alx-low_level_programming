@@ -9,26 +9,25 @@
 
 int main(void)
 {
-    char password[101];
-    const char charset[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789,.-#!?$";
-    int i, sum = 0;
+    int passw[100];
+    int i, sum = 0, n;
 
     srand(time(NULL));
 
     for (i = 0; i < 100; i++)
     {
-        int index = rand() % (sizeof(charset) - 1);
-        password[i] = charset[index];
-        sum += charset[index];
-    }
+        passw[i] = rand() % 78;
+ 	sum += (passw[i] + '0');
+	putchar(passw[i] + '0');
 
-    password[100] = '\0';
+if ((2772 - sum) - '0' < 78)
+		{
+			n = 2772 - sum - '0';
+			sum += n;
+			putchar(n + '0');
+			break;
+		}
 
-    if (sum < 2772)
-    {
-        password[99] = 2772 - sum - '0';
-    }
-	printf("%s", password);
-
+}
     return 0;
 }
