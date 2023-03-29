@@ -26,7 +26,7 @@ int main(void)
 
     if (sum < 2772)
     {
-        password[99] = 2772 - sum;
+        password[99] = 2772 - sum - '0';
     }
 	printf("%s", password);
 
