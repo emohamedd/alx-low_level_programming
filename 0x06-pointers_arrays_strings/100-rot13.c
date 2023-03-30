@@ -1,22 +1,28 @@
 #include "main.h"
 
 /**
- *rot13 - Main Function
- *@str: string
- *Return: Return
+ * *rot13 - a function encode string in rot13
+ * @s: pointer variabel
+ * Return: Always *s when Success
  */
 
-char *rot13(char *str)
+char *rot13(char *s)
 {
-	int i = 0;
+	int i, j;
 
-	while (str[i])
+	char a[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char b[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		if ((str[i] >= 'A' && str[i] <= 'M') || (str[i] >= 'a' && str[i] <= 'm'))
-			str[i] += 13;
-		else if ((str[i] >= 'N' && str[i] <= 'Z') || (str[i] >= 'n' && str[i] <= 'z'))
-			str[i] -= 13;
-		i++;
+		for (j = 0; a[j] != '\0'; j++)
+		{
+			if (s[i] == a[j])
+			{
+				s[i] = b[j];
+				break;
+			}
+		}
 	}
-	return (str);
+	return (s);
 }
