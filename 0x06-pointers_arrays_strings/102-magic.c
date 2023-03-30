@@ -18,7 +18,7 @@ int main(void)
    */
   ;
   /* ...so that this prints 98\n */
- *(p + 5) = 98;
+  *(p + 5) = 98;
   printf("a[2] = %d\n", a[2]);
   return (0);
 }
