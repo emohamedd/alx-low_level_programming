@@ -1,11 +1,12 @@
 #include "main.h"
 
 /**
- * _strncpy - a function that print n elem of array
+ * _strcmp - a function that print n elem of array
  * @s1: pointer variable
  * @s2: variable
  * Return: void return nothing
  */
+
 int _strcmp(char *s1, char *s2)
 {
 	int i = 0;
