@@ -21,7 +21,7 @@ int char_str(char *s, char c)
 }
 
 /**
- * _strspn - a function
+ * _strpbrk - a function
  * @s:  variable
  * @accept: variable
  * Return: return s or NULL
