@@ -2,8 +2,8 @@
 #include <unistd.h>
 #include <stdio.h>
 /**
- * _strlen_recursion - prints
- * @s: an array of pointers
+ * factorial - prints
+ * @n: an array of pointers
  *Return: nothing void
  */
 
