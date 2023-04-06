@@ -6,13 +6,19 @@
 /**
  * main - The Function
  * @c:  The variable
- * @v: The Variable
+ * @v: THe variable
  * Return: The Return value/void
  */
 
 int main(int c, char **v)
 {
-	if (c > 0)
-		printf("%s\n", *v);
+	if (c >= 1)
+	{
+		while (*v)
+		{
+			printf("%s\n", *v);
+			v++;
+		}
+	}
 	return (0);
 }

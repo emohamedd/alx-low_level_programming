@@ -4,15 +4,14 @@
 /* By EMOHAMEDD */
 
 /**
- * main - The Function
+ * main  - The Function
  * @c:  The variable
- * @v: The Variable
+ * @v: The Var
  * Return: The Return value/void
  */
 
-int main(int c, char **v)
+int main(int c, char __attribute__((unused)) **v)
 {
-	if (c > 0)
-		printf("%s\n", *v);
+	printf("%d\n", c - 1);
 	return (0);
 }
