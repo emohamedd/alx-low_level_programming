@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 /* By EMOHAMEDD */
 
 /**
@@ -15,7 +16,7 @@ int is_valid_number(char *s)
 
 	while (s[i])
 	{
-		if (s[i] >= '0' && s[i] <= '9')
+		if (!(s[i] >= '0' && s[i] <= '9'))
 			return (0);
 		i++;
 	}
@@ -28,29 +29,29 @@ int is_valid_number(char *s)
 
 /**
  * main  - The Function
- * @c:  The variable
- * @v: The variable
+ * @argc:  The variable
+ * @argv: The variable
  * Return: The Return value/void
  */
 
-int main(int c, char **v)
+int main(int argc, char **argv)
 {
 	int i = 1;
 	int sum = 0;
 
-	if (c == 1)
+	if (argc == 1)
 	{
 		printf("0\n");
 		return (0);
 	}
-	while (v[i])
+	while (argv[i])
 	{
-		if (is_valid_number(v[i]))
+		if (!is_valid_number(argv[i]))
 		{
 			printf("Error\n");
 			return (1);
 		}
-		sum += atoi(v[i]);
+		sum += atoi(argv[i]);
 		i++;
 	}
 	printf("%d\n", sum);
