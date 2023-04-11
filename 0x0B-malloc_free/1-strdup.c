@@ -4,7 +4,7 @@
 /* By EMOHAMEDD */
 
 /**
- * strdup - The Function
+ * _strdup - The Function
  * @str:  The variable
  * Return: The Return value/void
  */
