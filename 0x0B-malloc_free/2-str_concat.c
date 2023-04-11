@@ -14,6 +14,7 @@
 unsigned int _strlen(char *s)
 {
 	unsigned int i = 0;
+
 	while (s[i])
 		i++;
 	return (i);
@@ -27,6 +28,7 @@ unsigned int _strlen(char *s)
  * @s2: The Variable
  * Return: The Return value/void
  */
+
 char *str_concat(char *s1, char *s2)
 {
 	int i = 0;
