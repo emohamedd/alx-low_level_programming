@@ -5,10 +5,8 @@
 /* By EMOHAMEDD */
 
 /**
- * string_nconcat - The Function
- * @s1:  The variable
- * @s2: The variable
- * @n: The variable
+ * _strlen - The Function
+ * @s:  The variable
  * Return: The Return value/void
  */
 
@@ -22,6 +20,16 @@ int  _strlen(char *s)
 	}
 	return (i);
 }
+
+/* By EMOHAMEDD */
+
+/**
+ * string_nconcat - The Function
+ * @s1:  The variable
+ * @s2: The variable
+ * @n: The variable
+ * Return: The Return value/void
+ */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
