@@ -1,5 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "main.h"
+
+/* By EMOHAMEDD */
 
 /**
  * malloc_checked - The Function
