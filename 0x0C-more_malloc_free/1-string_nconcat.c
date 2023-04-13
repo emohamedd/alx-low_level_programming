@@ -10,7 +10,7 @@
  * Return: The Return value/void
  */
 
-int  _strlen(char *s)
+unsigned int  _strlen(char *s)
 {
 	unsigned int i = 0;
 
