@@ -4,9 +4,10 @@
 /* By EMOHAMEDD */
 
 /**
- *print_name - initializes a struct
- *@name: the  value
- *@f: the value
+ *array_iterator - initializes a struct
+ *@size: the  value
+ *@array: array
+ *@action: the value
  *Return: void
  */
 
