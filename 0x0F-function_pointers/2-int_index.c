@@ -4,9 +4,10 @@
 /* By EMOHAMEDD */
 
 /**
- *print_name - initializes a struct
- *@name: the  value
- *@f: the value
+ *int_index - initializes a struct
+ *@array: the  value
+ *@size: the value
+ *@cmp: the value
  *Return: void
  */
 
