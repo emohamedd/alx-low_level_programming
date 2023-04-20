@@ -26,7 +26,7 @@ void putstr(char *str)
 
 
 /**
- *print_trings - printd string by \n
+ *print_strings - printd string by \n
  *@separator: the string
  *@n: int string
  *@...: inf string
