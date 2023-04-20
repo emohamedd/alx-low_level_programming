@@ -1,22 +1,22 @@
 #include "variadic_functions.h"
 
+/* BY EMOHAMEDD */
 /**
  *print_all - printd string by \n
  *@format: list type
  *@...: arguments
- *Return: nothing
+ *Return: void
  */
 
 void print_all(const char * const format, ...)
 {
-	va_list ap;
 	int i = 0;
-	char *str;
+	va_list ap;
+	char *s;
 	char *separator = "";
 
-
 	va_start(ap, format);
-	if  (format)
+	if (format)
 	{
 		while (format[i])
 		{
@@ -29,7 +29,7 @@ void print_all(const char * const format, ...)
 					printf("%s%d", separator, va_arg(ap, int));
 					break;
 				case 'f':
-					printf("%s%f", separator, va_arg(ap, int));
+					printf("%s%f", separator, va_arg(ap, double));
 					break;
 				case 's':
 					s = va_arg(ap, char *);
@@ -41,15 +41,10 @@ void print_all(const char * const format, ...)
 					i++;
 					continue;
 			}
-			separator = ", "';
+			separator = ", ";
 			i++;
 		}
 	}
-	putstr("\n");
+	putchar('\n');
 	va_end(ap);
-}
-int main(void)
-{
-    print_all("ceis", 'B', 3, "stSchool");
-    return (0);
 }
