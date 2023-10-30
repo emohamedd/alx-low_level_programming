@@ -1,12 +1,10 @@
 #include "main.h"
 
-/*  By emohamedd */
-
 /**
  *create_file - create a file
  *@filename: the name of the file to create
  *@text_content: the content of the created file
- *Return: 1 on success else -1 is returned
+ *Return: 1 on success else -1
  */
 
 int create_file(const char *filename, char *text_content)
